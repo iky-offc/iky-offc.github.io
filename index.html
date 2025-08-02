@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikyvortex - Pemula</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="iky.css">
+</head>
+<body>
+
+    <div id="realtime-clock" class="realtime-clock card"></div>
+
+    <header class="header">
+        <a href="chat.html" class="logo">IkyVortex</a>
+        <button id="menu-btn" class="menu-btn">☰</button>
+    </header>
+
+    <nav id="nav-menu" class="nav-menu">
+        <button id="close-btn" class="close-btn">×</button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="chat.html">Chat AI</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hello-bar card">👋 <span id="dynamic-greeting"></span></div>
+            <h1>I'M <span class="highlight">Ikyvortex,</span><br>PEMULA BANG</h1>
+            <p>cuma bocah ingusan 🙄</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary card">View My Work →</a>
+                <a href="#contact" class="btn btn-secondary card">Contact Me</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://files.catbox.moe/xb1k2g.jpg" alt="Portfolio Character" class="hero-image card">
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <a href="#about" class="btn-like-title card section-heading">About Me</a>
+            <div class="about-content-card">
+                <div class="about-image-container">
+                    <img src="https://files.catbox.moe/gqmb50.jpg" alt="My Story Image" class="about-image card">
+                    <div class="deco-circle"></div>
+                </div>
+                <h2>MY STORY</h2>
+                <p>Hello, my name is Iky
+                I live in Bengkulu 
+                I am now 19 years old
+                I plan to go to Japan to increase my knowledge and gain deeper insight.</p>
+                <div class="stats-container">
+                    <div class="stat-item"><div class="stat-icon">19</div><p>Years age<br><span>born into a well-off family </span></p></div>
+                    <div class="stat-item"><div class="stat-icon">2+</div><p>Projects Completed<br><span>Bot WhatsApp</span></p></div>
+                </div>
+                <a href="#" class="btn btn-dark card">Download Resume</a>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="skills-content-card">
+                <a href="#skills" class="btn-like-title card">My Skills</a>
+                <h2>TECHNICAL EXPERTISE</h2>
+                <p>Sedikit memodifikasi AI bawaan yang berguna untuk keperluan sehari-hari </p>
+                <h3>Kamu juga bisa mencobanya </h3>
+                <div class="ai-grid">
+                    <div class="ai-item card ai-item-premium">Gemini</div>
+                    <div class="ai-item card ai-item-premium">Chat GPT</div>
+                    <div class="ai-item card">Claude AI</div>
+                    <div class="ai-item card">DeepSeek AI</div>
+                    <div class="ai-item card">Llama AI</div>
+                    <div class="ai-item card">Copilot</div>
+                    <div class="ai-item card">Meta AI</div>
+                    <div class="ai-item card">Yupp AI</div>
+                    <div class="ai-item card">BlackBox AI</div>
+                    <div class="ai-item card">Perplexity AI</div>
+                    <div class="ai-item card">Mistral AI</div>
+                    <div class="ai-item card">Mid Journey</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <a href="#contact" class="btn-like-title card section-heading">Get In Touch</a>
+            <h2>AYO BEKERJA SAMA</h2>
+            <p>Kamu bisa membuat fitur bot md? jika kamu bisa ayo kita saling membantu memperbagus script bersama</p>
+            <div class="contact-info-list">
+                <div class="contact-info-item"><div class="contact-icon icon-email"><i class="fa-solid fa-envelope"></i></div><div><h4>Email</h4><p>ikyvortex@gmail.com</p></div></div>
+                <div class="contact-info-item"><div class="contact-icon icon-location"><i class="fa-solid fa-location-dot"></i></div><div><h4>Location</h4><p>Bengkulu, South Sumatra , Indonesia 🇮🇩</p></div></div>
+                <div class="contact-info-item"><div class="contact-icon icon-phone"><i class="fa-solid fa-phone"></i></div><div><h4>Phone</h4><p>+6283144627535</p></div></div>
+            </div>
+            
+            <div class="form-container card">
+                <form id="contact-form" action="https://formspree.io/f/mvgqobrl" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+62 123-4567-8910">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary card">Send Message</button>
+                    <div id="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo card">IKYVORTEX</div>
+        <p class="copyright">© 2025 IkyVortex. All rights reserved.</p>
+        <div class="footer-nav">
+            <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="chat.html">Chat AI</a><a href="#contact">Contact</a>
+        </div>
+        <h3>CONNECT</h3>
+        <div class="social-links-footer">
+            <a href="#" class="social-icon-footer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/alip-jmbd" class="social-icon-footer"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon-footer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-footer"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="iky.js"></script>
+</body>
+</html>
