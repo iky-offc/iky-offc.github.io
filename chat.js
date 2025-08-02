@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalConfirmBtn.addEventListener('click', () => {
         chatHistory = [];
-        localStorage.removeItem('lipzxAiChatHistory');
+        localStorage.removeItem('ikyChatHistory');
         chatWindow.innerHTML = '';
         renderMessage({ sender: 'ai', content: 'Hello! Please select a model and send a message.', type: 'text' });
         customConfirmModal.classList.add('is-hidden');
